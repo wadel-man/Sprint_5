@@ -1,5 +1,5 @@
 import pytest
-
+from data import BASE_URL
 from selenium import webdriver
 
 
@@ -7,7 +7,7 @@ from selenium import webdriver
 def driver():
     browser = webdriver.Chrome()
 
-    browser.get('https://stellarburgers.education-services.ru/')
+    browser.get(BASE_URL)
 
     yield browser
 
